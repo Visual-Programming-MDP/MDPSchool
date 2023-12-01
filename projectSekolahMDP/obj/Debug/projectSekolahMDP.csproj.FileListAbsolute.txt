@@ -21,3 +21,16 @@ D:\MI31\projectSekolahMDP\projectSekolahMDP\obj\Debug\projectSekolahMDP.exe
 D:\MI31\projectSekolahMDP\projectSekolahMDP\obj\Debug\projectSekolahMDP.pdb
 D:\MI31\projectSekolahMDP\projectSekolahMDP\obj\Debug\projectSekolahMDP.FormSiswa.resources
 D:\MI31\projectSekolahMDP\projectSekolahMDP\obj\Debug\projectSekolahMDP.FormTampilSiswa.resources
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\bin\Debug\projectSekolahMDP.exe.config
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\bin\Debug\projectSekolahMDP.exe
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\bin\Debug\projectSekolahMDP.pdb
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.csproj.AssemblyReference.cache
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.FormLogin.resources
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.FormMenuUtama.resources
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.FormSiswa.resources
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.FormTampilSiswa.resources
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.Properties.Resources.resources
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.csproj.GenerateResource.cache
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.csproj.CoreCompileInputs.cache
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.exe
+D:\DOSEN\20231\VIS1 MI31\MDPSchool\projectSekolahMDP\obj\Debug\projectSekolahMDP.pdb
