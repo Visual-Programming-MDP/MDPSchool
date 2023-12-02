@@ -1,4 +1,4 @@
---Buatlah database dengan nama dbSekolahMDP
+--Buatlah database dengan nama dbMDPSchool
 
 --Buatlah tabel dengan nama User,
 --dengan field sbb :
@@ -6,9 +6,9 @@
 --pasword varchar(10)
 --level varchar(15)
 
-CREATE DATABASE dbSekolahMDP
+CREATE DATABASE dbMDPSchool
 GO
-USE dbSekolahMDP
+USE dbMDPSchool
 GO
 CREATE TABLE Users (
 	username VARCHAR(10) PRIMARY KEY,

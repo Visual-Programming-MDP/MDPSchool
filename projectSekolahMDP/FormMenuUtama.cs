@@ -14,10 +14,21 @@ namespace projectSekolahMDP
     {
         String username = FormLogin.username;
         String level = FormLogin.level;
+
         public FormMenuUtama()
         {
             InitializeComponent();
+
+            if (username == null && level == null)
+            {
+                nonaktifmenu();
+            }
+            else
+            {
+                aktifmenu();
+            }
         }
+
         //Menu Data Siswa
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
@@ -42,15 +53,31 @@ namespace projectSekolahMDP
             formTampilSiswa.Show();
         }
 
-        private void aktifMenu()
+        public void nonaktifmenu()
         {
-            lblUsername.Text = username.ToString();
-            lblLevel.Text = username.ToString();
+            menuTampilData.Enabled = false;
+            menuDataSiswa.Enabled = false;
+            menuLaporan.Enabled = false;
         }
 
-        private void nonaktifMenu()
+        private void aktifmenu()
         {
+            //Hak akses : admin, dan siswa
+            if (level.Equals("admin"))
+            {
+                menuTampilData.Enabled = true;
+                menuDataSiswa.Enabled = true;
+                menuLaporan.Enabled = true;
+            }
+            else
+            {
+                menuTampilData.Enabled = true;
+                menuDataSiswa.Enabled = false;
+                menuLaporan.Enabled = false;
+            }
 
+            lblUsername.Text = username.ToString();
+            lblLevel.Text = level.ToString();
         }
     }
 }
