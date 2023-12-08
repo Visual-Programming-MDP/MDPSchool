@@ -46,25 +46,26 @@ namespace projectSekolahMDP
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textNIS = new System.Windows.Forms.TextBox();
+            this.textNama = new System.Windows.Forms.TextBox();
+            this.textTempat = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.btnLogin = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnUbahFoto = new System.Windows.Forms.Button();
+            this.textAlamat = new System.Windows.Forms.TextBox();
+            this.textHp = new System.Windows.Forms.TextBox();
+            this.textAsalSekolah = new System.Windows.Forms.TextBox();
+            this.cbAgama = new System.Windows.Forms.ComboBox();
+            this.radioLakilaki = new System.Windows.Forms.RadioButton();
+            this.radioPerempuan = new System.Windows.Forms.RadioButton();
+            this.textTanggalLahir = new System.Windows.Forms.MaskedTextBox();
+            this.textLokasiFoto = new System.Windows.Forms.TextBox();
+            this.btnUbah = new System.Windows.Forms.Button();
+            this.btnSimpan = new System.Windows.Forms.Button();
+            this.btnHapus = new System.Windows.Forms.Button();
+            this.btnBersih = new System.Windows.Forms.Button();
+            this.btnKeluar = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -237,29 +238,29 @@ namespace projectSekolahMDP
             this.dataGridView1.Size = new System.Drawing.Size(808, 274);
             this.dataGridView1.TabIndex = 16;
             // 
-            // textBox1
+            // textNIS
             // 
-            this.textBox1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBox1.Location = new System.Drawing.Point(349, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(334, 33);
-            this.textBox1.TabIndex = 17;
+            this.textNIS.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textNIS.Location = new System.Drawing.Point(349, 73);
+            this.textNIS.Name = "textNIS";
+            this.textNIS.Size = new System.Drawing.Size(334, 33);
+            this.textNIS.TabIndex = 17;
             // 
-            // textBox2
+            // textNama
             // 
-            this.textBox2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(349, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(334, 33);
-            this.textBox2.TabIndex = 18;
+            this.textNama.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textNama.Location = new System.Drawing.Point(349, 109);
+            this.textNama.Name = "textNama";
+            this.textNama.Size = new System.Drawing.Size(334, 33);
+            this.textNama.TabIndex = 18;
             // 
-            // textBox3
+            // textTempat
             // 
-            this.textBox3.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(349, 181);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(164, 33);
-            this.textBox3.TabIndex = 19;
+            this.textTempat.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textTempat.Location = new System.Drawing.Point(349, 181);
+            this.textTempat.Name = "textTempat";
+            this.textTempat.Size = new System.Drawing.Size(164, 33);
+            this.textTempat.TabIndex = 19;
             // 
             // pictureBox1
             // 
@@ -269,158 +270,160 @@ namespace projectSekolahMDP
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // btnUbahFoto
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(706, 232);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(135, 40);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "UBAH FOTO";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnUbahFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUbahFoto.Font = new System.Drawing.Font("Verdana", 11F, System.Drawing.FontStyle.Bold);
+            this.btnUbahFoto.Location = new System.Drawing.Point(706, 232);
+            this.btnUbahFoto.Name = "btnUbahFoto";
+            this.btnUbahFoto.Size = new System.Drawing.Size(135, 40);
+            this.btnUbahFoto.TabIndex = 21;
+            this.btnUbahFoto.Text = "UBAH FOTO";
+            this.btnUbahFoto.UseVisualStyleBackColor = true;
+            this.btnUbahFoto.Click += new System.EventHandler(this.btnUbahFoto_Click);
             // 
-            // textBox4
+            // textAlamat
             // 
-            this.textBox4.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(349, 220);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(334, 33);
-            this.textBox4.TabIndex = 22;
+            this.textAlamat.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textAlamat.Location = new System.Drawing.Point(349, 220);
+            this.textAlamat.Name = "textAlamat";
+            this.textAlamat.Size = new System.Drawing.Size(334, 33);
+            this.textAlamat.TabIndex = 22;
             // 
-            // textBox5
+            // textHp
             // 
-            this.textBox5.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBox5.Location = new System.Drawing.Point(349, 342);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(334, 33);
-            this.textBox5.TabIndex = 23;
+            this.textHp.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textHp.Location = new System.Drawing.Point(349, 342);
+            this.textHp.Name = "textHp";
+            this.textHp.Size = new System.Drawing.Size(334, 33);
+            this.textHp.TabIndex = 23;
             // 
-            // textBox6
+            // textAsalSekolah
             // 
-            this.textBox6.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBox6.Location = new System.Drawing.Point(349, 261);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(334, 33);
-            this.textBox6.TabIndex = 24;
+            this.textAsalSekolah.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textAsalSekolah.Location = new System.Drawing.Point(349, 261);
+            this.textAsalSekolah.Name = "textAsalSekolah";
+            this.textAsalSekolah.Size = new System.Drawing.Size(334, 33);
+            this.textAsalSekolah.TabIndex = 24;
             // 
-            // comboBox1
+            // cbAgama
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(349, 301);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(334, 33);
-            this.comboBox1.TabIndex = 25;
+            this.cbAgama.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.cbAgama.FormattingEnabled = true;
+            this.cbAgama.Location = new System.Drawing.Point(349, 301);
+            this.cbAgama.Name = "cbAgama";
+            this.cbAgama.Size = new System.Drawing.Size(334, 33);
+            this.cbAgama.TabIndex = 25;
             // 
-            // radioButton1
+            // radioLakilaki
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.Location = new System.Drawing.Point(349, 145);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(130, 29);
-            this.radioButton1.TabIndex = 26;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Laki-laki";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioLakilaki.AutoSize = true;
+            this.radioLakilaki.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.radioLakilaki.Location = new System.Drawing.Point(349, 145);
+            this.radioLakilaki.Name = "radioLakilaki";
+            this.radioLakilaki.Size = new System.Drawing.Size(130, 29);
+            this.radioLakilaki.TabIndex = 26;
+            this.radioLakilaki.TabStop = true;
+            this.radioLakilaki.Text = "Laki-laki";
+            this.radioLakilaki.UseVisualStyleBackColor = true;
+            this.radioLakilaki.CheckedChanged += new System.EventHandler(this.radioLakilaki_CheckedChanged);
             // 
-            // radioButton2
+            // radioPerempuan
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.radioButton2.Location = new System.Drawing.Point(485, 145);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(164, 29);
-            this.radioButton2.TabIndex = 27;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Perempuan";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            this.radioPerempuan.AutoSize = true;
+            this.radioPerempuan.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.radioPerempuan.Location = new System.Drawing.Point(485, 145);
+            this.radioPerempuan.Name = "radioPerempuan";
+            this.radioPerempuan.Size = new System.Drawing.Size(164, 29);
+            this.radioPerempuan.TabIndex = 27;
+            this.radioPerempuan.TabStop = true;
+            this.radioPerempuan.Text = "Perempuan";
+            this.radioPerempuan.UseVisualStyleBackColor = true;
+            this.radioPerempuan.CheckedChanged += new System.EventHandler(this.radioPerempuan_CheckedChanged);
             // 
-            // maskedTextBox1
+            // textTanggalLahir
             // 
-            this.maskedTextBox1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.maskedTextBox1.Location = new System.Drawing.Point(519, 180);
-            this.maskedTextBox1.Mask = "00/00/0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(164, 33);
-            this.maskedTextBox1.TabIndex = 28;
-            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
+            this.textTanggalLahir.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textTanggalLahir.Location = new System.Drawing.Point(519, 180);
+            this.textTanggalLahir.Mask = "00/00/0000";
+            this.textTanggalLahir.Name = "textTanggalLahir";
+            this.textTanggalLahir.Size = new System.Drawing.Size(164, 33);
+            this.textTanggalLahir.TabIndex = 28;
+            this.textTanggalLahir.ValidatingType = typeof(System.DateTime);
             // 
-            // textBox7
+            // textLokasiFoto
             // 
-            this.textBox7.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textBox7.Location = new System.Drawing.Point(706, 301);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(135, 33);
-            this.textBox7.TabIndex = 29;
+            this.textLokasiFoto.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.textLokasiFoto.Location = new System.Drawing.Point(706, 301);
+            this.textLokasiFoto.Name = "textLokasiFoto";
+            this.textLokasiFoto.Size = new System.Drawing.Size(135, 33);
+            this.textLokasiFoto.TabIndex = 29;
             // 
-            // btnCancel
+            // btnUbah
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.Maroon;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnCancel.Location = new System.Drawing.Point(231, 403);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(119, 48);
-            this.btnCancel.TabIndex = 31;
-            this.btnCancel.Text = "UBAH";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnUbah.BackColor = System.Drawing.Color.Maroon;
+            this.btnUbah.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUbah.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUbah.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnUbah.Location = new System.Drawing.Point(231, 403);
+            this.btnUbah.Name = "btnUbah";
+            this.btnUbah.Size = new System.Drawing.Size(119, 48);
+            this.btnUbah.TabIndex = 31;
+            this.btnUbah.Text = "UBAH";
+            this.btnUbah.UseVisualStyleBackColor = false;
             // 
-            // btnLogin
+            // btnSimpan
             // 
-            this.btnLogin.BackColor = System.Drawing.Color.Teal;
-            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLogin.Location = new System.Drawing.Point(87, 403);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(119, 48);
-            this.btnLogin.TabIndex = 30;
-            this.btnLogin.Text = "SIMPAN";
-            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnSimpan.BackColor = System.Drawing.Color.Teal;
+            this.btnSimpan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSimpan.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSimpan.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnSimpan.Location = new System.Drawing.Point(87, 403);
+            this.btnSimpan.Name = "btnSimpan";
+            this.btnSimpan.Size = new System.Drawing.Size(119, 48);
+            this.btnSimpan.TabIndex = 30;
+            this.btnSimpan.Text = "SIMPAN";
+            this.btnSimpan.UseVisualStyleBackColor = false;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
-            // button2
+            // btnHapus
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(379, 403);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 48);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "HAPUS";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnHapus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnHapus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHapus.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHapus.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnHapus.Location = new System.Drawing.Point(379, 403);
+            this.btnHapus.Name = "btnHapus";
+            this.btnHapus.Size = new System.Drawing.Size(119, 48);
+            this.btnHapus.TabIndex = 32;
+            this.btnHapus.Text = "HAPUS";
+            this.btnHapus.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnBersih
             // 
-            this.button3.BackColor = System.Drawing.Color.Olive;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.Location = new System.Drawing.Point(530, 403);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 48);
-            this.button3.TabIndex = 33;
-            this.button3.Text = "BERSIH";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnBersih.BackColor = System.Drawing.Color.Olive;
+            this.btnBersih.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBersih.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBersih.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnBersih.Location = new System.Drawing.Point(530, 403);
+            this.btnBersih.Name = "btnBersih";
+            this.btnBersih.Size = new System.Drawing.Size(119, 48);
+            this.btnBersih.TabIndex = 33;
+            this.btnBersih.Text = "BERSIH";
+            this.btnBersih.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnKeluar
             // 
-            this.button4.BackColor = System.Drawing.Color.Purple;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button4.Location = new System.Drawing.Point(679, 403);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 48);
-            this.button4.TabIndex = 34;
-            this.button4.Text = "KELUAR";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnKeluar.BackColor = System.Drawing.Color.Purple;
+            this.btnKeluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKeluar.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKeluar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnKeluar.Location = new System.Drawing.Point(679, 403);
+            this.btnKeluar.Name = "btnKeluar";
+            this.btnKeluar.Size = new System.Drawing.Size(119, 48);
+            this.btnKeluar.TabIndex = 34;
+            this.btnKeluar.Text = "KELUAR";
+            this.btnKeluar.UseVisualStyleBackColor = false;
             // 
             // label16
             // 
@@ -434,6 +437,10 @@ namespace projectSekolahMDP
             this.label16.Text = "Formulir Siswa";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // FormSiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -441,24 +448,24 @@ namespace projectSekolahMDP
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(867, 776);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnKeluar);
+            this.Controls.Add(this.btnBersih);
+            this.Controls.Add(this.btnHapus);
+            this.Controls.Add(this.btnUbah);
+            this.Controls.Add(this.btnSimpan);
+            this.Controls.Add(this.textLokasiFoto);
+            this.Controls.Add(this.textTanggalLahir);
+            this.Controls.Add(this.radioPerempuan);
+            this.Controls.Add(this.radioLakilaki);
+            this.Controls.Add(this.cbAgama);
+            this.Controls.Add(this.textAsalSekolah);
+            this.Controls.Add(this.textHp);
+            this.Controls.Add(this.textAlamat);
+            this.Controls.Add(this.btnUbahFoto);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textTempat);
+            this.Controls.Add(this.textNama);
+            this.Controls.Add(this.textNIS);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
@@ -504,24 +511,25 @@ namespace projectSekolahMDP
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textNIS;
+        private System.Windows.Forms.TextBox textNama;
+        private System.Windows.Forms.TextBox textTempat;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnUbahFoto;
+        private System.Windows.Forms.TextBox textAlamat;
+        private System.Windows.Forms.TextBox textHp;
+        private System.Windows.Forms.TextBox textAsalSekolah;
+        private System.Windows.Forms.ComboBox cbAgama;
+        private System.Windows.Forms.RadioButton radioLakilaki;
+        private System.Windows.Forms.RadioButton radioPerempuan;
+        private System.Windows.Forms.MaskedTextBox textTanggalLahir;
+        private System.Windows.Forms.TextBox textLokasiFoto;
+        private System.Windows.Forms.Button btnUbah;
+        private System.Windows.Forms.Button btnSimpan;
+        private System.Windows.Forms.Button btnHapus;
+        private System.Windows.Forms.Button btnBersih;
+        private System.Windows.Forms.Button btnKeluar;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
