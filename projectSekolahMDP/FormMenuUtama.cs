@@ -12,8 +12,8 @@ namespace projectSekolahMDP
 {
     public partial class FormMenuUtama : Form
     {
-        String username = FormLogin.username;
-        String level = FormLogin.level;
+        string username = FormLogin.username;
+        string level = FormLogin.level;
 
         public FormMenuUtama()
         {
@@ -29,27 +29,33 @@ namespace projectSekolahMDP
             }
         }
 
-        //Menu Data Siswa
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-            FormSiswa formSiswa = new   FormSiswa();
-            formSiswa.Show();
-        }
+        
         //Menu Logout
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            //Application.Exit(); //menutup aplikasi scr kesuluruhan
-            this.Close();       //menutup form yang sedang terbuka
-            
-            //Munculkan Form Login
-            FormLogin formLogin = new FormLogin();
-            formLogin.Show();
+            if (MessageBox.Show("Apakah Anda Ingin Keluar Aplikasi ? ", "EXIT", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                //Application.Exit(); //menutup aplikasi scr kesuluruhan
+                this.Close();       //menutup form yang sedang terbuka
+
+                //Munculkan Form Login
+                FormLogin formLogin = new FormLogin();
+                formLogin.Show();
+            }
+        }
+        //Menu Data Siswa
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            FormSiswa formSiswa = new FormSiswa();
+            formSiswa.MdiParent = this;
+            formSiswa.Show();
         }
 
         //Menu Tampil Data
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             FormTampilSiswa formTampilSiswa = new FormTampilSiswa();
+            formTampilSiswa.MdiParent = this;
             formTampilSiswa.Show();
         }
 
