@@ -139,6 +139,11 @@ namespace projectSekolahMDP
              */
         }
 
+        private void textTanggalLahir_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
         /*
          * 
          * 

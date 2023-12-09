@@ -350,6 +350,7 @@ namespace projectSekolahMDP
             this.textTanggalLahir.Size = new System.Drawing.Size(164, 33);
             this.textTanggalLahir.TabIndex = 28;
             this.textTanggalLahir.ValidatingType = typeof(System.DateTime);
+            this.textTanggalLahir.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.textTanggalLahir_MaskInputRejected);
             // 
             // textLokasiFoto
             // 
