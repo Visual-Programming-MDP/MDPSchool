@@ -12,8 +12,8 @@ namespace projectSekolahMDP
 {
     public partial class FormMenuUtama : Form
     {
-        string username = FormLogin.username;
-        string level = FormLogin.level;
+        string username = "admin"; //FormLogin.username;
+        string level = "admin"; // FormLogin.level;
 
         public FormMenuUtama()
         {

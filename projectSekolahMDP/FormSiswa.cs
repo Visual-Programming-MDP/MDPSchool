@@ -55,7 +55,6 @@ namespace projectSekolahMDP
             radioLakilaki.Checked = false;
             radioPerempuan.Checked = false;
             textTempat.Clear();
-            textTanggalLahir.Clear();
             textAlamat.Clear();
             textAsalSekolah.Clear();
             cbAgama.Text = "";
@@ -101,11 +100,9 @@ namespace projectSekolahMDP
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
-            /*
-             * 
-             * 
-             if (txtNis.Text == "" || txtNama.Text == "" || jk == "" || txtTempat.Text == "" || txtAlamat.Text == "" || txtAsalSekolah.Text == "" || cmbAgama.Text == "" || txtNoHp.Text == "" || txtLokasiFoto.Text == "")
-             {
+            
+             if (textNIS.Text == "" || textNama.Text == "" || jk == "" || textTempat.Text == "" || textAlamat.Text == "" || textAsalSekolah.Text == "" || cbAgama.Text == "" || textHp.Text == "") //|| textLokasiFoto.Text == ""
+            {
                  MessageBox.Show("Data Harus Diisi", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
              }
              else
@@ -115,16 +112,16 @@ namespace projectSekolahMDP
                  koneksi.bukaDatabase();
                  koneksi.perintahSQL.CommandText = "INSERT INTO Siswa VALUES (@nis, @nama, @jk, @tempat, @tgllahir, @alamat, @asalsekolah, @agama, @nohp, @alamatfoto)";
 
-                 koneksi.perintahSQL.Parameters.AddWithValue("@nis", txtNis.Text);
-                 koneksi.perintahSQL.Parameters.AddWithValue("@nama", txtNama.Text);
+                 koneksi.perintahSQL.Parameters.AddWithValue("@nis", textNIS.Text);
+                 koneksi.perintahSQL.Parameters.AddWithValue("@nama", textNama.Text);
                  koneksi.perintahSQL.Parameters.AddWithValue("@jk", jk);
-                 koneksi.perintahSQL.Parameters.AddWithValue("@tempat", txtTempat.Text);
-                 koneksi.perintahSQL.Parameters.AddWithValue("@tgllahir", dtpTanggalLahir.Value);
-                 koneksi.perintahSQL.Parameters.AddWithValue("@alamat", txtAlamat.Text);
-                 koneksi.perintahSQL.Parameters.AddWithValue("@asalsekolah", txtAsalSekolah.Text);
-                 koneksi.perintahSQL.Parameters.AddWithValue("@agama", cmbAgama.Text);
-                 koneksi.perintahSQL.Parameters.AddWithValue("@nohp", txtNoHp.Text);
-                 koneksi.perintahSQL.Parameters.AddWithValue("@alamatfoto", txtLokasiFoto.Text);
+                 koneksi.perintahSQL.Parameters.AddWithValue("@tempat", textTempat.Text);
+                 koneksi.perintahSQL.Parameters.AddWithValue("@tgllahir", dtpTanggal.Value);
+                 koneksi.perintahSQL.Parameters.AddWithValue("@alamat", textAlamat.Text);
+                 koneksi.perintahSQL.Parameters.AddWithValue("@asalsekolah", textAsalSekolah.Text);
+                 koneksi.perintahSQL.Parameters.AddWithValue("@agama", cbAgama.Text);
+                 koneksi.perintahSQL.Parameters.AddWithValue("@nohp", textHp.Text);
+                 koneksi.perintahSQL.Parameters.AddWithValue("@alamatfoto", textLokasiFoto.Text);
 
                  koneksi.perintahSQL.ExecuteNonQuery();
 
@@ -135,8 +132,6 @@ namespace projectSekolahMDP
                  tampil();
                  bersih();
              }
-
-             */
         }
 
         private void textTanggalLahir_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -144,43 +139,40 @@ namespace projectSekolahMDP
 
         }
 
-        /*
-         * 
-         * 
-          private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
                 //jika ada data pada DataGridView
-                txtNis.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                txtNama.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                textNIS.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                textNama.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
 
                 jk = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
 
                 if (jk.Equals("L"))
                 {
-                    rdLakiLaki.Checked = true;
+                    radioLakilaki.Checked = true;
                 }
                 else
                 {
-                    rdPerempuan.Checked = true;
+                    radioPerempuan.Checked = true;
                 }
 
-                txtTempat.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
-                dtpTanggalLahir.Value = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString());
-                txtAlamat.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-                txtAsalSekolah.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-                cmbAgama.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
-                txtNoHp.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
-                txtLokasiFoto.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-                pictureBox1.Image = Image.FromFile(txtLokasiFoto.Text);
+                textTempat.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                dtpTanggal.Value = Convert.ToDateTime(dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString());
+                textAlamat.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                textAsalSekolah.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                cbAgama.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+                textHp.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+                textLokasiFoto.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+                pictureBox1.Image = Image.FromFile(textLokasiFoto.Text);
                 btnSimpan.Enabled = false;
             }
         }
-
         private void btnUbah_Click(object sender, EventArgs e)
         {
-            if (txtNis.Text == "" || txtNama.Text == "" || jk == "" || txtTempat.Text == "" || txtAlamat.Text == "" || txtAsalSekolah.Text == "" || cmbAgama.Text == "" || txtNoHp.Text == "" || txtLokasiFoto.Text == "")
+            if (textNIS.Text == "" || textNama.Text == "" || jk == "" || textTempat.Text == "" || textAlamat.Text == "" || textAsalSekolah.Text == "" || cbAgama.Text == "" || textHp.Text == "") //|| textLokasiFoto.Text == ""
             {
                 MessageBox.Show("Data Harus Diisi", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -189,18 +181,18 @@ namespace projectSekolahMDP
                 //Data diubah
                 koneksi.tutupDatabase();
                 koneksi.bukaDatabase();
-                koneksi.perintahSQL.CommandText = "";
+                koneksi.perintahSQL.CommandText = "UPDATE Siswa SET nama = @nama, jeniskelamin = @jk, tempat = @tempat, tanggallahir = @tgllahir, alamat = @alamat, asalsekolah = @asalsekolah, agama = @agama, nohp = @nohp, alamatfoto = @alamatfoto WHERE nis = @nis";
 
-                koneksi.perintahSQL.Parameters.AddWithValue("@nis", txtNis.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@nama", txtNama.Text);
+                koneksi.perintahSQL.Parameters.AddWithValue("@nis", textNIS.Text);
+                koneksi.perintahSQL.Parameters.AddWithValue("@nama", textNama.Text);
                 koneksi.perintahSQL.Parameters.AddWithValue("@jk", jk);
-                koneksi.perintahSQL.Parameters.AddWithValue("@tempat", txtTempat.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@tgllahir", dtpTanggalLahir.Value);
-                koneksi.perintahSQL.Parameters.AddWithValue("@alamat", txtAlamat.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@asalsekolah", txtAsalSekolah.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@agama", cmbAgama.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@nohp", txtNoHp.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@alamatfoto", txtLokasiFoto.Text);
+                koneksi.perintahSQL.Parameters.AddWithValue("@tempat", textTempat.Text);
+                koneksi.perintahSQL.Parameters.AddWithValue("@tgllahir", dtpTanggal.Value);
+                koneksi.perintahSQL.Parameters.AddWithValue("@alamat", textAlamat.Text);
+                koneksi.perintahSQL.Parameters.AddWithValue("@asalsekolah", textAsalSekolah.Text);
+                koneksi.perintahSQL.Parameters.AddWithValue("@agama", cbAgama.Text);
+                koneksi.perintahSQL.Parameters.AddWithValue("@nohp", textHp.Text);
+                koneksi.perintahSQL.Parameters.AddWithValue("@alamatfoto", textLokasiFoto.Text);
 
                 koneksi.perintahSQL.ExecuteNonQuery();
 
@@ -212,30 +204,21 @@ namespace projectSekolahMDP
                 bersih();
             }
         }
-
+        
         private void btnHapus_Click(object sender, EventArgs e)
         {
-            if (txtNis.Text == "" || txtNama.Text == "" || jk == "" || txtTempat.Text == "" || txtAlamat.Text == "" || txtAsalSekolah.Text == "" || cmbAgama.Text == "" || txtNoHp.Text == "" || txtLokasiFoto.Text == "")
+            if (textNIS.Text == "" || textNama.Text == "" || jk == "" || textTempat.Text == "" || textAlamat.Text == "" || textAsalSekolah.Text == "" || cbAgama.Text == "" || textHp.Text == "") //|| textLokasiFoto.Text == ""
             {
                 MessageBox.Show("Data Harus Diisi", "INFO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
             }
             else
-            {
-                //Data disimpan
+            {//Data dihapus
                 koneksi.tutupDatabase();
                 koneksi.bukaDatabase();
-                koneksi.perintahSQL.CommandText = "INSERT INTO Siswa VALUES (@nis, @nama, @jk, @tempat, @tgllahir, @alamat, @asalsekolah, @agama, @nohp, @alamatfoto)";
+                koneksi.perintahSQL.CommandText = "DELETE FROM Siswa WHERE nis = @nis";
 
                 koneksi.perintahSQL.Parameters.AddWithValue("@nis", txtNis.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@nama", txtNama.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@jk", jk);
-                koneksi.perintahSQL.Parameters.AddWithValue("@tempat", txtTempat.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@tgllahir", dtpTanggalLahir.Value);
-                koneksi.perintahSQL.Parameters.AddWithValue("@alamat", txtAlamat.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@asalsekolah", txtAsalSekolah.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@agama", cmbAgama.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@nohp", txtNoHp.Text);
-                koneksi.perintahSQL.Parameters.AddWithValue("@alamatfoto", txtLokasiFoto.Text);
 
                 koneksi.perintahSQL.ExecuteNonQuery();
 
@@ -247,7 +230,16 @@ namespace projectSekolahMDP
                 bersih();
             }
         }
-         * 
-         * */
+
+        private void btnBersih_Click(object sender, EventArgs e)
+        {
+            bersih();
+            tampil();
+        }
+
+        private void btnKeluar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

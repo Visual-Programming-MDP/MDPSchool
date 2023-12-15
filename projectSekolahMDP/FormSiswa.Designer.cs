@@ -57,7 +57,6 @@ namespace projectSekolahMDP
             this.cbAgama = new System.Windows.Forms.ComboBox();
             this.radioLakilaki = new System.Windows.Forms.RadioButton();
             this.radioPerempuan = new System.Windows.Forms.RadioButton();
-            this.textTanggalLahir = new System.Windows.Forms.MaskedTextBox();
             this.textLokasiFoto = new System.Windows.Forms.TextBox();
             this.btnUbah = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
@@ -66,6 +65,7 @@ namespace projectSekolahMDP
             this.btnKeluar = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.dtpTanggal = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -341,17 +341,6 @@ namespace projectSekolahMDP
             this.radioPerempuan.UseVisualStyleBackColor = true;
             this.radioPerempuan.CheckedChanged += new System.EventHandler(this.radioPerempuan_CheckedChanged);
             // 
-            // textTanggalLahir
-            // 
-            this.textTanggalLahir.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
-            this.textTanggalLahir.Location = new System.Drawing.Point(519, 180);
-            this.textTanggalLahir.Mask = "00/00/0000";
-            this.textTanggalLahir.Name = "textTanggalLahir";
-            this.textTanggalLahir.Size = new System.Drawing.Size(164, 33);
-            this.textTanggalLahir.TabIndex = 28;
-            this.textTanggalLahir.ValidatingType = typeof(System.DateTime);
-            this.textTanggalLahir.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.textTanggalLahir_MaskInputRejected);
-            // 
             // textLokasiFoto
             // 
             this.textLokasiFoto.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
@@ -412,6 +401,7 @@ namespace projectSekolahMDP
             this.btnBersih.TabIndex = 33;
             this.btnBersih.Text = "BERSIH";
             this.btnBersih.UseVisualStyleBackColor = false;
+            this.btnBersih.Click += new System.EventHandler(this.btnBersih_Click);
             // 
             // btnKeluar
             // 
@@ -425,6 +415,7 @@ namespace projectSekolahMDP
             this.btnKeluar.TabIndex = 34;
             this.btnKeluar.Text = "KELUAR";
             this.btnKeluar.UseVisualStyleBackColor = false;
+            this.btnKeluar.Click += new System.EventHandler(this.btnKeluar_Click);
             // 
             // label16
             // 
@@ -442,12 +433,24 @@ namespace projectSekolahMDP
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // dtpTanggal
+            // 
+            this.dtpTanggal.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold);
+            this.dtpTanggal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpTanggal.Location = new System.Drawing.Point(519, 181);
+            this.dtpTanggal.MaxDate = new System.DateTime(2024, 12, 31, 0, 0, 0, 0);
+            this.dtpTanggal.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.dtpTanggal.Name = "dtpTanggal";
+            this.dtpTanggal.Size = new System.Drawing.Size(164, 33);
+            this.dtpTanggal.TabIndex = 36;
+            // 
             // FormSiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(867, 776);
+            this.Controls.Add(this.dtpTanggal);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.btnKeluar);
             this.Controls.Add(this.btnBersih);
@@ -455,7 +458,6 @@ namespace projectSekolahMDP
             this.Controls.Add(this.btnUbah);
             this.Controls.Add(this.btnSimpan);
             this.Controls.Add(this.textLokasiFoto);
-            this.Controls.Add(this.textTanggalLahir);
             this.Controls.Add(this.radioPerempuan);
             this.Controls.Add(this.radioLakilaki);
             this.Controls.Add(this.cbAgama);
@@ -523,7 +525,6 @@ namespace projectSekolahMDP
         private System.Windows.Forms.ComboBox cbAgama;
         private System.Windows.Forms.RadioButton radioLakilaki;
         private System.Windows.Forms.RadioButton radioPerempuan;
-        private System.Windows.Forms.MaskedTextBox textTanggalLahir;
         private System.Windows.Forms.TextBox textLokasiFoto;
         private System.Windows.Forms.Button btnUbah;
         private System.Windows.Forms.Button btnSimpan;
@@ -532,5 +533,6 @@ namespace projectSekolahMDP
         private System.Windows.Forms.Button btnKeluar;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.DateTimePicker dtpTanggal;
     }
 }
