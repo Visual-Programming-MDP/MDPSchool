@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -166,7 +167,11 @@ namespace projectSekolahMDP
                 cbAgama.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
                 textHp.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
                 textLokasiFoto.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
-                pictureBox1.Image = Image.FromFile(textLokasiFoto.Text);
+                if (textLokasiFoto.Text != "")
+                {
+                    pictureBox1.Image = Image.FromFile(textLokasiFoto.Text);
+                }
+
                 btnSimpan.Enabled = false;
             }
         }

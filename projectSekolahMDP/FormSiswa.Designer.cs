@@ -237,6 +237,7 @@ namespace projectSekolahMDP
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(808, 274);
             this.dataGridView1.TabIndex = 16;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // textNIS
             // 
@@ -361,6 +362,7 @@ namespace projectSekolahMDP
             this.btnUbah.TabIndex = 31;
             this.btnUbah.Text = "UBAH";
             this.btnUbah.UseVisualStyleBackColor = false;
+            this.btnUbah.Click += new System.EventHandler(this.btnUbah_Click);
             // 
             // btnSimpan
             // 
@@ -388,6 +390,7 @@ namespace projectSekolahMDP
             this.btnHapus.TabIndex = 32;
             this.btnHapus.Text = "HAPUS";
             this.btnHapus.UseVisualStyleBackColor = false;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
             // btnBersih
             // 
